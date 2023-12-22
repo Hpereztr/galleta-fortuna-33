@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import phrases from './utils/phrases.json'
 import getRandomFromArr from './utils/getRamdomFromArr'
-import Phrase from './components/phrase'
+import Phrase from './components/Phrase'
 import Button from './components/Button'
 import arrPhotos from './utils/photos.json'
 
@@ -26,7 +26,7 @@ const initialPhoto = getRandomFromArr(arrPhotos)
     <h1 className='app__title'>Galleta de la fortuna</h1> 
     <div className='app__card'>
     <Phrase quoteRandom={quoteRandom}/>
-    <Button  
+    <Button
     setQuoteRandom={setQuoteRandom}
     setPhotoRandom={setPhotoRandom}
     />
